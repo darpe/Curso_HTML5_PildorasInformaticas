@@ -9,15 +9,26 @@ body {
 #navegacion {
 	background-color: #a0ec89
 }
+li {
+	background-color: #dac325;
+	display: inline-block;
+}
 
 #barra_lateral{
-	background-color: #4ae2b4
+	background-color: #4ae2b4;
+	float: left;
+	height: 1665px;
+	clear: both;
 }
 
 #contenido_principal{
-	background-color: #eee50c
+	background-color: #eee50c;
+	margin-left: 250px;
 }
 
 #pie_pagina{
-	background-color: #028e1d
+	background-color: #028e1d;
+	clear: both;
+	margin-top: 20px;
+
 }
