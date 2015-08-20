@@ -1,3 +1,23 @@
 body {
 	background-color: #85aa1f
 }
+
+#cabecera {
+	background-color: #d6ee0c
+}
+
+#navegacion {
+	background-color: #a0ec89
+}
+
+#barra_lateral{
+	background-color: #4ae2b4
+}
+
+#contenido_principal{
+	background-color: #eee50c
+}
+
+#pie_pagina{
+	background-color: #028e1d
+}
