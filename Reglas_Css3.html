@@ -10,10 +10,20 @@
 			border: 3px solid #0AA;
 			border-radius: 15px;
 			box-shadow: #109c7a 5px 5px 15px;
-			background: -webkit-radial-gradient (center, ellipse, #1e4955, #3989d8, #307cca); /*opera-chrome,ie*/			
-			background: -moz-radial-gradient (center, ellipse, #1e5799, #2989d8, #207cca); /*mozilla*/
-			background: -ms-linear-gradient (top, #1e5799, #2989d8, #207cca); /*internet explorer*/
+			background: -webkit-radial-gradient(center, ellipse, #1e4955, #3989d8, #307cca); /*opera-chrome,ie, "siempre pegado el parentesis porque sino no aplica el gradiente*/			
+			background: -moz-radial-gradient(center, ellipse, #1e5799, #2989d8, #207cca); /*mozilla*/
+			background: -ms-linear-gradient(top, #1e5799, #2989d8, #207cca); /*internet explorer*/
+			/*outline: 4px dashed #307cca; /*bordes*/
+			/*outline-offset: 10px;  /*ancho del borde*/
+			/*-moz-transform: scale(-1,1); /*aumenta el tamaño, con valores negativos da una forma como de espejo -1, 1*/
+			/*-moz-transform: rotate(5deg); /*rotar y deg son los grados*/
+			/*-moz-transform: skew(-15deg); /*perspectiva de un elemento con valores positivos a la izquierda y valores negativos a la derecha*/
+			-moz-transition: -moz-transform 1s ease 0.5s; /*tiempo, efecto, tiempo*/
 		}
+		#principal:hover {
+			-moz-transform: rotate(5deg); 
+		}
+
 		@font-face {
 			font-family: 'mipropiafuente';
 			src: url('Newside_FP_Regular.ttf');
@@ -22,6 +32,7 @@
 		#titulo {
 			font: bold 36px 'mipropiafuente';
 			text-shadow: #aee415 3px 3px 3px;
+			color: rgba(0, 0, 0, 0.3); /*degradado de letras el 4to valor es el degradado*/
 		}
 	</style>
 <head>
