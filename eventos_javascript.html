@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Eventos JavaScript</title>
+	<script>
+
+	var imagen;
+
+		function anime(){
+			
+			alert("Anime Charlotte Primavera 2015");
+		}
+
+		function manejaanime(){
+					
+			imagen=document.getElementsByTagName("img")[0]; /*evento addeventlistener*/
+				imagen.addEventListener("mouseover",crecer,false);/*crece imagen*/
+				imagen.addEventListener("mouseout",menguar,false);/*tamaño original*/
+				imagen.addEventListener("click",anime,false); /*dice el nombre*/
+
+			/*document.getElementsByTagName("img")[0].onclick=anime;*/ /*evento*/
+			/*<p> <img src="images/charlotte.jpg" onmouseover="anime()"></p> /*Evento en linea*/	
+		}
+
+		function crecer(){/*crecer evento*/
+
+			imagen.width = 1280;
+			imagen.height = 1920;
+		}
+
+		function menguar(){/*tamaño normal*/
+
+			imagen.width = 640;
+			imagen.height = 960;
+
+		}
+		window.onload=manejaanime;
+	</script>
+</head>
+<body>
+	<p> <img src="images/charlotte.jpg"></p>
+</body>
+</html>
