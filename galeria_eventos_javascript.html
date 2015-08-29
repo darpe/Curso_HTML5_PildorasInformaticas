@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria con Eventos en Javascript</title>
+	<script>
+
+	var imagen = new Array(3);
+
+		function anime(){
+			
+			alert("Anime Primavera 2015");
+		}
+
+		function manejaanime(){
+					
+			for (var i=0; i< 4; i++){
+
+			imagen[i]=document.getElementsByTagName("img")[i]; /*evento addeventlistener*/
+		}
+				imagen[0].addEventListener("mouseover",function() {imagen[0].width=640;imagen[0].height=960;},false);/*crece imagen*/  /*funcion anonima*/
+				imagen[0].addEventListener("mouseout",function() {imagen[0].width=320;imagen[0].height=480;},false);/*tamaño original*/ /*funcion anonima*/
+				imagen[0].addEventListener("click",anime,false); /*dice el nombre*/
+				
+				imagen[1].addEventListener("mouseover",function() {imagen[1].width=640;imagen[1].height=960;},false);/*crece imagen*/  /*funcion anonima*/
+				imagen[1].addEventListener("mouseout",function() {imagen[1].width=320;imagen[1].height=480;},false);/*tamaño original*/ /*funcion anonima*/
+				imagen[1].addEventListener("click",anime,false); /*dice el nombre*/		
+
+				imagen[2].addEventListener("mouseover",function() {imagen[2].width=640;imagen[2].height=960;},false);/*crece imagen*/  /*funcion anonima*/
+				imagen[2].addEventListener("mouseout",function() {imagen[2].width=320;imagen[2].height=480;},false);/*tamaño original*/ /*funcion anonima*/
+				imagen[2].addEventListener("click",anime,false); /*dice el nombre*/
+
+				imagen[3].addEventListener("mouseover",function() {imagen[3].width=640;imagen[3].height=960;},false);/*crece imagen*/  /*funcion anonima*/
+				imagen[3].addEventListener("mouseout",function() {imagen[3].width=320;imagen[3].height=480;},false);/*tamaño original*/ /*funcion anonima*/
+				imagen[3].addEventListener("click",anime,false); /*dice el nombre*/
+
+				imagen[4].addEventListener("mouseover",function() {imagen[4].width=640;imagen[4].height=960;},false);/*crece imagen*/  /*funcion anonima*/
+				imagen[4].addEventListener("mouseout",function() {imagen[4].width=320;imagen[4].height=480;},false);/*tamaño original*/ /*funcion anonima*/
+				imagen[4].addEventListener("click",anime,false); /*dice el nombre*/		
+		}
+
+		/*function crecer(){ /*crecer evento
+
+			imagen.width = 640;
+			imagen.height = 960;
+		}*/
+
+		/*function menguar(){/*tamaño normal
+
+			imagen.width = 320;
+			imagen.height = 480;
+
+		}*/
+		window.addEventListener("load",manejaanime,false);
+		/*window.onload=manejaanime;*/
+	</script>
+
+</head>
+<body>
+	<p> <img src="images/charlotte.jpg"> &nbsp;	
+	<img src="images/god_eater.jpg"> &nbsp;	
+	<img src="images/gate.png"> &nbsp; 
+	<img src="images/rokka.jpg"> &nbsp;</p>
+</body>
+</html>
