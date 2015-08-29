@@ -1,6 +1,7 @@
 function ejecuta(){
 	
-	var a = document.GetElementsbyClassName("dos")[0].onclick=saludo;
+	for (var i=0; i < 5; i++) {
+	var a = document.GetElementsbyClassName("dos")[i].onclick=saludo;
 
 	/*for (var i = 0; i < 5; i++) {
 	document.getElementsByTagName('p')[i].onclick=saludo; /*para un solo elemento*/
