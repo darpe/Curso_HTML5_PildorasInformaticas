@@ -1,0 +1,36 @@
+#video {
+	width: 720px;
+	margin: 20px auto;
+	background: #0aaf6a;
+	padding: 5px;
+	border: 4px solid #43db9b;
+	-moz-border-radius: 10px; /*mozilla*/
+	-webkit-border-radius: 10px; /*chrome - opera*/
+	border-radius: 10px; /*general*/
+}
+
+nav{
+	margin: 5px 0;
+}
+
+#botones{
+	float: left;
+	width: 100px;
+	height: 20px;
+}
+
+#barra{
+	background: #FFF;
+	width: 600px;
+	height: 16px;
+	border: 1px solid #c7c3c7;
+	padding: 3px;
+	margin-left:80px;
+}
+
+#progreso{
+	position: absolute;
+	width: 0px;
+	height: 16px;
+	background: rgba(66, 95, 177, 0.67);
+}
